@@ -2,6 +2,8 @@
 
 Personal portfolio of **João Meneses**, Full-Stack Software Engineer (C# / .NET · React / Next.js · PostgreSQL).
 
+[![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-0B0D0A?logo=vercel&labelColor=0B0D0A&color=C6F432)](https://devmeneses.com)
+
 **Live:** https://devmeneses.com · **Recruiter mode:** https://devmeneses.com/cv
 
 ![Preview](public/og-image.png)
@@ -27,7 +29,7 @@ npm install
 npm run dev
 ```
 
-Build with `npm run build`. Regenerate the map dots with `node scripts/build-map.mjs`.
+Build with `npm run build`. Every push to `main` deploys to production on Vercel. Regenerate the map dots with `node scripts/build-map.mjs`.
 
 ### Environment (Vercel)
 
