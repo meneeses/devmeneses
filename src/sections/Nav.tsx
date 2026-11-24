@@ -22,7 +22,7 @@ export function LangToggle() {
 }
 
 export default function Nav({ onRecruiter }: { onRecruiter: () => void }) {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const [scrolled, setScrolled] = useState(false)
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 40)
@@ -92,7 +92,7 @@ export default function Nav({ onRecruiter }: { onRecruiter: () => void }) {
           <button onClick={onRecruiter} className="hidden rounded-full btn-ghost px-3.5 py-1.5 text-[13px] lg:block">
             {t.nav.recruiter}
           </button>
-          <a href={links.cv} download className="rounded-full bg-fg px-3.5 py-1.5 text-[13px] font-medium text-ink transition hover:bg-lime">
+          <a href={links.cv[lang]} download className="rounded-full bg-fg px-3.5 py-1.5 text-[13px] font-medium text-ink transition hover:bg-lime">
             {t.nav.cv}
           </a>
         </div>

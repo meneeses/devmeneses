@@ -1,7 +1,7 @@
 export type Lang = 'en' | 'pt'
 
 export const links = {
-  email: 'meneses-joao@hotmail.com',
+  email: 'contactjoaomeneses@gmail.com',
   phone: '+55 41 99672-7030',
   tel: 'tel:+5541996727030',
   whatsapp: 'https://wa.me/5541996727030',
@@ -9,19 +9,19 @@ export const links = {
   github: 'https://github.com/meneeses',
   youtube: 'https://www.youtube.com/@icone.academy',
   icone: 'https://icone.academy',
-  cv: '/Joao_Meneses_CV_EN.pdf',
+  cv: { en: '/Joao_Meneses_CV_EN.pdf', pt: '/Joao_Meneses_CV_PT.pdf', es: '/Joao_Meneses_CV_ES.pdf' },
 }
 
 const en = {
   nav: { work: 'Work', request: 'How I build', journey: 'Journey', stack: 'Stack', contact: 'Contact', recruiter: 'Recruiter mode', cv: 'Download CV', back: 'Back to the full site' },
   hero: {
-    eyebrow: 'Full-Stack Software Engineer · Valencia, ES · Open to remote',
+    eyebrow: 'Full-Stack Software Engineer · Relocating to Valencia, ES · Open to sponsorship, B2B & remote',
     title: ['I build systems', 'that', "don't break", 'at 3am.'],
     sub: 'C# / .NET · React / Next.js · PostgreSQL. I design, ship and run production SaaS — from secure APIs to the pixels on screen.',
     ctaPrimary: 'See my work',
     ctaSecondary: 'Download CV',
     stats: [
-      { value: '3', unit: 'yrs', label: 'shipping to production' },
+      { value: '3+', unit: 'yrs', label: 'in software & IT' },
       { value: '20', unit: '', label: 'companies on a SaaS I architected' },
       { value: '0', unit: '', label: 'rows lost in a live DB migration' },
       { value: 'C1', unit: '', label: 'English · EF SET certified' },
@@ -65,9 +65,9 @@ const en = {
       summary: 'A multi-tenant SaaS ERP for artisan and industrial gelato producers: recipe balancing, formula reverse-engineering, nutrition labeling, subscriptions and a B2B marketplace. I architected and built it from scratch.',
       metrics: [
         { value: '20', label: 'client companies' },
+        { value: '30', label: 'active users' },
         { value: '500+', label: 'ingredients' },
         { value: '100+', label: 'recipes balanced' },
-        { value: '2', label: 'engineers mentored' },
       ],
       problemTitle: 'The problem',
       problem: 'Gelato makers balanced recipes in spreadsheets: sugar, fat and solids by hand, labels typed manually, no way to share formulas safely between companies.',
@@ -77,7 +77,7 @@ const en = {
         'Real-time updates with SignalR across tenants',
         'Recipe optimizer with Google OR-Tools (SCIP) + automated nutrition PDFs',
         'Payments, email, SMS, shipping and OpenAI integrations behind an outbox',
-        'CI/CD, xUnit / Vitest / Playwright, Sentry and Application Insights',
+        'CI/CD, xUnit / Vitest / Playwright, Sentry and Application Insights — and mentored two engineers',
       ],
     },
     projects: [
@@ -90,15 +90,15 @@ const en = {
   journey: {
     kicker: '03 — Journey',
     title: ['From', 'Curitiba', 'to Valencia'],
-    intro: "I'm João — a Brazilian engineer now based in Valencia, Spain. I like owning things end to end: talking to the customer, drawing the architecture, writing the migration, and being the one who fixes it when it breaks.",
-    languages: 'Portuguese (native) · English C1 · Spanish (intermediate) · Korean A2',
+    intro: "I'm João — a Brazilian engineer relocating to Valencia, Spain. I like owning things end to end: talking to the customer, drawing the architecture, writing the migration, and being the one who fixes it when it breaks.",
+    languages: 'Portuguese (native) · English C1 · Spanish (intermediate) · Korean (A2)',
     steps: [
       { when: '2020 – 2023', where: 'IFPR · Brazil', what: 'Technical Diploma in Computer Science' },
-      { when: '2023 – 2025', where: 'Witzenmann Group · Pinhais', what: 'IT Assistant — automated internal processes with PHP & SQL, supported TOTVS Protheus ERP' },
+      { when: '2023 – 2025', where: 'Witzenmann Group · Pinhais', what: 'IT Assistant — built PHP & SQL automations adopted across every department; ran SQL Server/MySQL and TOTVS Protheus' },
       { when: '2024 – 2026', where: 'PUCPR · Brazil', what: 'Associate Degree in Systems Analysis and Development' },
       { when: '2025', where: 'BWT Operadora · Curitiba', what: 'Full-Stack Developer — travel-order system, InfoTravels API, automation workflows' },
       { when: '2025 – 2026', where: 'ICone · Remote', what: 'Lead Software Engineer — architected a multi-tenant SaaS ERP from zero' },
-      { when: 'Now', where: 'Valencia · Spain', what: 'Open to remote roles in CET — what are we building next?' },
+      { when: 'Next', where: 'Valencia · Spain', what: 'Relocating — open to visa sponsorship, B2B or remote (CET / BRT). What are we building next?' },
     ],
   },
   stack: {
@@ -129,7 +129,7 @@ const en = {
   },
   footer: {
     status: 'All systems operational',
-    available: 'Available for remote roles · CET',
+    available: 'Open to visa sponsorship, B2B or remote · CET / BRT',
     localTime: 'Local time in Valencia',
     cta: 'Got a role or a project?',
     ctaLink: 'Send a request',
@@ -143,20 +143,21 @@ const en = {
   recruiter: {
     title: 'João Meneses',
     role: 'Full-Stack Software Engineer · C# / .NET · React / Next.js · TypeScript',
-    location: 'Valencia, Spain · Open to remote (CET)',
+    location: 'Relocating to Valencia, Spain · Open to visa sponsorship · Remote (CET / BRT)',
+    authorization: 'Work authorization: not yet authorized to work in Spain/EU — seeking sponsorship, or a B2B contract while I regularize my status.',
     summaryTitle: 'Summary',
-    summary: 'Full-stack engineer with 3 years of professional experience shipping production software. As lead software engineer I designed and built a multi-tenant SaaS ERP (20 client companies) end to end on .NET 10, Next.js and PostgreSQL — architecture, secure API design, cloud infrastructure, CI/CD, observability and customer-facing features.',
+    summary: 'Full-stack engineer with 3+ years of professional experience in software and IT, including a year leading engineering on a production SaaS. As lead engineer I designed and built a multi-tenant SaaS ERP (20 client companies) end to end on .NET 10, Next.js and PostgreSQL — from architecture and secure API design to cloud infrastructure, CI/CD, observability and customer-facing features. Strong in backend reliability, security and third-party integrations. Fluent English (C1, EF SET certified).',
     experienceTitle: 'Experience',
     experience: [
-      { role: 'Lead Software Engineer (Full-Stack)', company: 'ICone — Gelato Intelligence · Remote', when: 'Nov 2025 – Oct 2026', points: ['Architected and built a multi-tenant SaaS ERP from scratch (.NET 10, EF Core, PostgreSQL, Redis, Next.js 16, SignalR)', 'Migrated production DB from Supabase to Neon with zero data loss; moved hosting to Azure App Service with GitHub Actions', 'RBAC, 2FA, PostgreSQL RLS, CSRF, rate limiting; OWASP-based security audit', 'Idempotent webhooks, transactional outbox and background workers for payments, email, SMS, shipping and OpenAI', 'Recipe optimizer with Google OR-Tools; nutrition PDFs with QuestPDF; mentored two engineers'] },
+      { role: 'Lead Software Engineer (Full-Stack)', company: 'ICone — Gelato Intelligence · Remote (Brazil)', when: 'Nov 2025 – Oct 2026', points: ['Architected and built a multi-tenant SaaS ERP from scratch — 20 companies, 30 users, 500+ ingredients, 100+ recipes (.NET 10, EF Core, PostgreSQL, Redis, Next.js 16, SignalR)', 'Migrated production DB from Supabase to Neon with zero data loss; moved hosting to Azure App Service with GitHub Actions', 'RBAC, 2FA, PostgreSQL RLS, CSRF, rate limiting; OWASP-based security audit', 'Idempotent webhooks, transactional outbox and background workers for payments, email, SMS, shipping and OpenAI', 'Recipe optimizer with Google OR-Tools; nutrition PDFs with QuestPDF; mentored two engineers'] },
       { role: 'Full-Stack Developer — Integrations', company: 'BWT Operadora · Curitiba · Contract', when: 'Jul 2025 – Dec 2025', points: ['Internal travel-order management system with React, Node.js, Python, PostgreSQL and MySQL', 'InfoTravels API integration and automation workflows that cut manual validation work'] },
-      { role: 'IT Assistant (IT Intern until Dec 2023)', company: 'Witzenmann Group · Pinhais', when: 'May 2023 – Jul 2025', points: ['Automated internal processes with PHP and SQL on MySQL and SQL Server', 'Maintained databases and internal systems; supported TOTVS Protheus ERP'] },
+      { role: 'IT Assistant (IT Intern until Dec 2023)', company: 'Witzenmann Group · Pinhais', when: 'May 2023 – Jul 2025', points: ['Built process-automation solutions (PHP, SQL) adopted across all company departments, replacing manual workflows', 'Administered SQL Server/MySQL and supported TOTVS Protheus ERP (user access, modules, customizations); resolved hardware, software and network incidents'] },
     ],
     skillsTitle: 'Skills',
     educationTitle: 'Education',
     education: ['PUCPR — Associate Degree in Systems Analysis and Development (2024 – 2026)', 'IFPR — Technical Diploma in Computer Science (2020 – 2023)'],
     languagesTitle: 'Languages & certifications',
-    languages: 'Portuguese (native) · English C1 (EF SET) · Spanish (intermediate) · Korean A2 · Cisco CCNA: Introduction to Networks',
+    languages: 'Portuguese (native) · English C1 (EF SET) · Spanish (intermediate) · Korean (A2) · Cisco CCNA: Introduction to Networks',
     print: 'Print / Save as PDF',
   },
 }
@@ -166,13 +167,13 @@ export type Content = typeof en
 const pt: Content = {
   nav: { work: 'Projetos', request: 'Como construo', journey: 'Trajetória', stack: 'Stack', contact: 'Contato', recruiter: 'Modo recrutador', cv: 'Baixar CV', back: 'Voltar ao site completo' },
   hero: {
-    eyebrow: 'Engenheiro de Software Full-Stack · Valencia, ES · Aberto a remoto',
+    eyebrow: 'Engenheiro de Software Full-Stack · Mudando para Valência, ES · Aberto a patrocínio, PJ/B2B e remoto',
     title: ['Eu construo sistemas', 'que', 'não caem', 'às 3 da manhã.'],
     sub: 'C# / .NET · React / Next.js · PostgreSQL. Projeto, entrego e mantenho SaaS em produção — das APIs seguras aos pixels na tela.',
     ctaPrimary: 'Ver projetos',
     ctaSecondary: 'Baixar CV',
     stats: [
-      { value: '3', unit: 'anos', label: 'entregando em produção' },
+      { value: '3+', unit: 'anos', label: 'em software e TI' },
       { value: '20', unit: '', label: 'empresas num SaaS que arquitetei' },
       { value: '0', unit: '', label: 'linhas perdidas numa migração em produção' },
       { value: 'C1', unit: '', label: 'Inglês · certificado EF SET' },
@@ -216,9 +217,9 @@ const pt: Content = {
       summary: 'Um ERP SaaS multi-tenant para produtores de gelato artesanal e industrial: balanceamento de receitas, engenharia reversa de fórmulas, rotulagem nutricional, assinaturas e marketplace B2B. Arquitetei e construí do zero.',
       metrics: [
         { value: '20', label: 'empresas clientes' },
+        { value: '30', label: 'usuários ativos' },
         { value: '500+', label: 'ingredientes' },
         { value: '100+', label: 'receitas balanceadas' },
-        { value: '2', label: 'devs mentorados' },
       ],
       problemTitle: 'O problema',
       problem: 'Gelatieros balanceavam receitas em planilhas: açúcar, gordura e sólidos na mão, rótulos digitados manualmente e nenhuma forma segura de compartilhar fórmulas entre empresas.',
@@ -228,7 +229,7 @@ const pt: Content = {
         'Atualizações em tempo real com SignalR entre tenants',
         'Otimizador de receitas com Google OR-Tools (SCIP) + PDFs nutricionais automáticos',
         'Integrações de pagamento, e-mail, SMS, frete e OpenAI atrás de um outbox',
-        'CI/CD, xUnit / Vitest / Playwright, Sentry e Application Insights',
+        'CI/CD, xUnit / Vitest / Playwright, Sentry e Application Insights — e mentoria de dois devs',
       ],
     },
     projects: [
@@ -241,15 +242,15 @@ const pt: Content = {
   journey: {
     kicker: '03 — Trajetória',
     title: ['De', 'Curitiba', 'a Valencia'],
-    intro: 'Sou o João — engenheiro brasileiro, hoje morando em Valencia, na Espanha. Gosto de ser dono das coisas de ponta a ponta: conversar com o cliente, desenhar a arquitetura, escrever a migração e ser quem resolve quando quebra.',
-    languages: 'Português (nativo) · Inglês C1 · Espanhol (intermediário) · Coreano A2',
+    intro: 'Sou o João — engenheiro brasileiro, de mudança para Valência, na Espanha. Gosto de ser dono das coisas de ponta a ponta: conversar com o cliente, desenhar a arquitetura, escrever a migração e ser quem resolve quando quebra.',
+    languages: 'Português (nativo) · Inglês C1 · Espanhol (intermediário) · Coreano (A2)',
     steps: [
       { when: '2020 – 2023', where: 'IFPR · Brasil', what: 'Técnico em Informática' },
-      { when: '2023 – 2025', where: 'Witzenmann Group · Pinhais', what: 'Assistente de TI — automação de processos com PHP e SQL, suporte ao ERP TOTVS Protheus' },
+      { when: '2023 – 2025', where: 'Witzenmann Group · Pinhais', what: 'Assistente de TI — automações em PHP e SQL adotadas em todos os departamentos; SQL Server/MySQL e TOTVS Protheus' },
       { when: '2024 – 2026', where: 'PUCPR · Brasil', what: 'Tecnólogo em Análise e Desenvolvimento de Sistemas' },
       { when: '2025', where: 'BWT Operadora · Curitiba', what: 'Dev Full-Stack — sistema de pedidos de viagem, API InfoTravels, automações' },
       { when: '2025 – 2026', where: 'ICone · Remoto', what: 'Lead Software Engineer — arquitetei um ERP SaaS multi-tenant do zero' },
-      { when: 'Agora', where: 'Valencia · Espanha', what: 'Aberto a vagas remotas em CET — o que vamos construir?' },
+      { when: 'Próximo', where: 'Valência · Espanha', what: 'De mudança — aberto a patrocínio de visto, PJ/B2B ou remoto (CET / BRT). O que vamos construir?' },
     ],
   },
   stack: {
@@ -275,7 +276,7 @@ const pt: Content = {
   },
   footer: {
     status: 'Todos os sistemas operando',
-    available: 'Disponível para vagas remotas · CET',
+    available: 'Aberto a patrocínio de visto, PJ/B2B ou remoto · CET / BRT',
     localTime: 'Hora local em Valencia',
     cta: 'Tem uma vaga ou um projeto?',
     ctaLink: 'Mande um request',
@@ -289,20 +290,21 @@ const pt: Content = {
   recruiter: {
     ...en.recruiter,
     role: 'Engenheiro de Software Full-Stack · C# / .NET · React / Next.js · TypeScript',
-    location: 'Valencia, Espanha · Aberto a remoto (CET)',
+    location: 'Mudando-me para Valência, Espanha · Aberto a patrocínio de visto · Remoto (CET / BRT)',
+    authorization: 'Autorização de trabalho: ainda sem permissão na Espanha/UE — busco patrocínio, ou contrato PJ/B2B enquanto regularizo minha situação.',
     summaryTitle: 'Resumo',
-    summary: 'Engenheiro full-stack com 3 anos de experiência profissional entregando software em produção. Como lead software engineer, projetei e construí um ERP SaaS multi-tenant (20 empresas clientes) de ponta a ponta em .NET 10, Next.js e PostgreSQL — arquitetura, APIs seguras, infraestrutura em nuvem, CI/CD, observabilidade e funcionalidades para o cliente.',
+    summary: 'Engenheiro full-stack com mais de 3 anos de experiência profissional em software e TI, incluindo um ano liderando a engenharia de um SaaS em produção. Como engenheiro líder, projetei e construí de ponta a ponta um ERP SaaS multi-tenant (20 empresas clientes) em .NET 10, Next.js e PostgreSQL — da arquitetura e design seguro de APIs à infraestrutura em nuvem, CI/CD, observabilidade e funcionalidades para o cliente. Forte em confiabilidade de backend, segurança e integrações. Inglês fluente (C1, certificado EF SET).',
     experienceTitle: 'Experiência',
     experience: [
-      { role: 'Lead Software Engineer (Full-Stack)', company: 'ICone — Gelato Intelligence · Remoto', when: 'nov 2025 – out 2026', points: ['Arquitetei e construí do zero um ERP SaaS multi-tenant (.NET 10, EF Core, PostgreSQL, Redis, Next.js 16, SignalR)', 'Migrei o banco de produção do Supabase para o Neon sem perda de dados; levei o backend para Azure App Service com GitHub Actions', 'RBAC, 2FA, RLS no PostgreSQL, CSRF e rate limiting; auditoria de segurança baseada no OWASP', 'Webhooks idempotentes, outbox transacional e workers para pagamentos, e-mail, SMS, frete e OpenAI', 'Otimizador de receitas com Google OR-Tools; PDFs nutricionais com QuestPDF; mentoria de dois devs'] },
-      { role: 'Desenvolvedor Full-Stack — Integrações', company: 'BWT Operadora · Curitiba · Contrato', when: 'jul 2025 – dez 2025', points: ['Sistema interno de gestão de pedidos de viagem com React, Node.js, Python, PostgreSQL e MySQL', 'Integração com a API InfoTravels e automações que reduziram o trabalho manual de validação'] },
-      { role: 'Assistente de TI (estagiário até dez 2023)', company: 'Witzenmann Group · Pinhais', when: 'mai 2023 – jul 2025', points: ['Automação de processos internos com PHP e SQL em MySQL e SQL Server', 'Manutenção de bancos e sistemas internos; suporte ao ERP TOTVS Protheus'] },
+      { role: 'Engenheiro de Software Líder (Full-Stack)', company: 'ICone — Inteligência para Gelato · Remoto (Brasil)', when: 'nov 2025 – out 2026', points: ['Projetei e construí do zero um ERP SaaS multi-tenant — 20 empresas, 30 usuários, 500+ ingredientes, 100+ receitas (.NET 10, EF Core, PostgreSQL, Redis, Next.js 16, SignalR)', 'Migrei o banco de produção do Supabase para o Neon sem perda de dados; levei o backend para Azure App Service com GitHub Actions', 'RBAC, 2FA, RLS no PostgreSQL, CSRF e rate limiting; auditoria de segurança baseada no OWASP', 'Webhooks idempotentes, outbox transacional e workers para pagamentos, e-mail, SMS, frete e OpenAI', 'Otimizador de receitas com Google OR-Tools; PDFs nutricionais com QuestPDF; mentoria de dois devs'] },
+      { role: 'Desenvolvedor Full-Stack — Integrações', company: 'BWT Operadora · Curitiba · PJ', when: 'jul 2025 – dez 2025', points: ['Sistema interno de gestão de pedidos de viagem com React, Node.js, Python, PostgreSQL e MySQL', 'Integração com a API InfoTravels e automações que reduziram o trabalho manual de validação'] },
+      { role: 'Assistente de TI (estagiário até dez 2023)', company: 'Witzenmann Group · Pinhais', when: 'mai 2023 – jul 2025', points: ['Desenvolvi soluções de automação (PHP, SQL) adotadas em todos os departamentos da empresa, substituindo fluxos manuais', 'Administrei ambientes SQL Server/MySQL e dei suporte ao ERP TOTVS Protheus (acessos, módulos, customizações); resolvi incidentes de hardware, software e rede'] },
     ],
     skillsTitle: 'Habilidades',
     educationTitle: 'Formação',
     education: ['PUCPR — Tecnólogo em Análise e Desenvolvimento de Sistemas (2024 – 2026)', 'IFPR — Técnico em Informática (2020 – 2023)'],
     languagesTitle: 'Idiomas e certificações',
-    languages: 'Português (nativo) · Inglês C1 (EF SET) · Espanhol (intermediário) · Coreano A2 · Cisco CCNA: Introduction to Networks',
+    languages: 'Português (nativo) · Inglês C1 (EF SET) · Espanhol (intermediário) · Coreano (A2) · Cisco CCNA: Introduction to Networks',
     print: 'Imprimir / Salvar PDF',
   },
 }

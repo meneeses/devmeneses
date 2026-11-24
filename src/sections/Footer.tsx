@@ -45,7 +45,7 @@ function Wordmark() {
 }
 
 export default function Footer() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const f = t.footer
   const time = useValenciaTime()
 
@@ -123,10 +123,18 @@ export default function Footer() {
                   WhatsApp <Arrow />
                 </a>
               </li>
-              <li>
-                <a href={links.cv} download className={linkCls}>
+              <li className="flex items-center gap-2 text-fg/75">
+                <a href={links.cv[lang]} download className={linkCls}>
                   {t.nav.cv} ↓
                 </a>
+                <span className="font-mono text-[11px] text-mute">
+                  {(['en', 'pt', 'es'] as const).map((l, i) => (
+                    <span key={l}>
+                      {i > 0 && ' · '}
+                      <a href={links.cv[l]} download className="uppercase transition hover:text-lime">{l}</a>
+                    </span>
+                  ))}
+                </span>
               </li>
             </ul>
           </div>

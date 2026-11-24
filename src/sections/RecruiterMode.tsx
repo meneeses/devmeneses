@@ -5,7 +5,7 @@ import { LangToggle } from './Nav'
 
 /** One-page, motion-free, printable résumé view (/cv). */
 export default function RecruiterMode({ onBack }: { onBack: () => void }) {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const r = t.recruiter
   const h = 'label !text-lime print:!text-black mb-3'
 
@@ -16,7 +16,12 @@ export default function RecruiterMode({ onBack }: { onBack: () => void }) {
         <div className="flex items-center gap-2">
           <LangToggle />
           <button onClick={() => window.print()} className="btn-ghost rounded-full px-4 py-2 text-sm">{r.print}</button>
-          <a href={links.cv} download className="btn-lime rounded-full px-4 py-2 text-sm font-semibold">{t.nav.cv}</a>
+          <a href={links.cv[lang]} download className="btn-lime rounded-full px-4 py-2 text-sm font-semibold">{t.nav.cv}</a>
+          <span className="flex rounded-full btn-ghost p-0.5 font-mono text-[11px]" aria-label="CV">
+            {(['en', 'pt', 'es'] as const).map((l) => (
+              <a key={l} href={links.cv[l]} download className="rounded-full px-2.5 py-1.5 uppercase text-mute transition hover:text-lime">PDF {l}</a>
+            ))}
+          </span>
         </div>
       </div>
 
@@ -29,6 +34,9 @@ export default function RecruiterMode({ onBack }: { onBack: () => void }) {
             <a href={links.tel} className="hover:text-lime">{links.phone}</a> ·{' '}
             <a href={links.linkedin} className="hover:text-lime">linkedin.com/in/joao-meneeses</a> ·{' '}
             <a href={links.github} className="hover:text-lime">github.com/meneeses</a>
+          </p>
+          <p className="mt-3 rounded-lg border border-lime/30 bg-lime/[0.06] px-3 py-2 text-sm text-fg/80 print:border-black/30 print:bg-transparent print:text-black">
+            {r.authorization}
           </p>
         </header>
 

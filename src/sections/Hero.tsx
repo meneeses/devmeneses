@@ -19,7 +19,7 @@ function Stat({ value, unit, label, align }: { value: string; unit: string; labe
 }
 
 export default function Hero() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const [ref, inView] = useInView<HTMLElement>('0px')
   const reduced = useReducedMotion()
   const [ready, setReady] = useState(false)
@@ -69,7 +69,7 @@ export default function Hero() {
             <a href="#work" className="btn-lime rounded-full px-6 py-3 text-sm font-semibold">
               {t.hero.ctaPrimary}
             </a>
-            <a href={links.cv} download className="btn-ghost rounded-full px-6 py-3 text-sm">
+            <a href={links.cv[lang]} download className="btn-ghost rounded-full px-6 py-3 text-sm">
               {t.hero.ctaSecondary}
             </a>
           </div>

@@ -123,7 +123,7 @@ export default function FlightMap() {
         />
 
         <Pin at={CWB} label="Curitiba" sub="BRAZIL · WHERE IT STARTED" side="right" lit />
-        <Pin at={VLC} label="Valencia" sub="SPAIN · NOW · CET" side="right" lit={arrived} />
+        <Pin at={VLC} label="Valencia" sub="SPAIN · NEXT CHAPTER" side="right" lit={arrived} />
 
         {/* plane */}
         <g ref={plane} transform={`translate(${CWB[0]},${CWB[1]})`}>

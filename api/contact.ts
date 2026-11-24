@@ -5,7 +5,7 @@ import { Resend } from 'resend'
  * POST /api/contact — sends the contact form to João via Resend.
  * Env: RESEND_API_KEY (required), CONTACT_TO (default below), CONTACT_FROM (a verified Resend sender).
  */
-const TO = process.env.CONTACT_TO ?? 'meneses-joao@hotmail.com'
+const TO = process.env.CONTACT_TO ?? 'contactjoaomeneses@gmail.com'
 const FROM = process.env.CONTACT_FROM ?? 'Portfolio <onboarding@resend.dev>'
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!)
